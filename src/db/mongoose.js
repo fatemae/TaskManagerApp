@@ -1,10 +1,8 @@
 const mongoose = require("mongoose");
 // const validator = require("validator");
 const connectionURL = process.env.MONGODB_CONNECTION_URL;
-const databaseName = process.env.MONGODB_DATBASENAME;
 
-
-mongoose.connect(connectionURL+"/"+databaseName, {
+mongoose.connect(connectionURL, {
     useNewUrlParser: true,
     useCreateIndex: true,
     useUnifiedTopology: true,
